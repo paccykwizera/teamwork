@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+body{
+    background-image: url('image.jpg');
+    background-size: cover;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(0, 0, 0, 0.514);
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.whole{
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 0px 15px;
+}
+.title{
+display: flex;
+flex-direction: column;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+.conc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cancel{
+    display: flex;
+    flex-direction: row;
+    background-color:#f32727b8;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.cancel:hover{
+    background-color: white;
+    color: rgba(165, 93, 93, 0.863);
+}
+.sign{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(108, 190, 108);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.sign:hover{
+    background-color: white;
+    color: rgb(108, 190, 108);
+}
+.form-container{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(245, 245, 245, 0.5);
+     padding: 10px;
+}
+.form-element{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.input-box{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    border: 1px solid black;
+}
+@media screen and (max-width:1085px){
+    .whole{
+        width: 100%;
+
+    }
+}
+@media screen and (max-width:765px){
+    .whole{
+        flex-direction: column;
+        height: 100%;
+        width: 100;
+    }
+    .form-container{
+        width: 70%;
+    }
+}
+@media screen and (max-width:450px){
+    .form-element{
+        flex-direction: column;
+    }
+}
